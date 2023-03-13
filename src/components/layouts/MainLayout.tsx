@@ -1,7 +1,14 @@
+import { FC } from "react";
+
 import Head from "next/head";
+
 import { Navbar } from "../Navbar";
 
-export const MainLayout = ({ children }) => {
+interface Props {
+    children: JSX.Element | JSX.Element[]
+}
+
+export const MainLayout: FC<Props> = ({ children }) => {
     return (<>
         <Head>
             <title>Home Page</title>
