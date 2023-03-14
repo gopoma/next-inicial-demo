@@ -1,7 +1,7 @@
-import { NextPage } from 'next';
-import { AppProps } from 'next/app';
+import { NextPage } from "next";
+import { AppProps } from "next/app";
 
-import '../styles/globals.css';
+import "../styles/globals.css";
 
 export type NextPageWithLayout = NextPage & {
     getLayout?: (page: JSX.Element) => JSX.Element;
