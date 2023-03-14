@@ -1,11 +1,13 @@
+import { NextPageWithLayout } from "./_app";
+
 import { DarkLayout } from "../components/layouts/DarkLayout";
 import { MainLayout } from "../components/layouts/MainLayout";
 
-export default function HomePage() {
+const HomePage: NextPageWithLayout = () => {
     return (
         <h1 className="text-3xl font-bold">Home Page</h1>
     );
-}
+};
 
 HomePage.getLayout = function getLayout(page) {
     return (
@@ -16,3 +18,5 @@ HomePage.getLayout = function getLayout(page) {
         </MainLayout>
     );
 }
+
+export default HomePage;

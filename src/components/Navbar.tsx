@@ -1,5 +1,7 @@
-import styles from "./Navbar.module.css";
+import { FC } from "react";
+
 import { ActiveLink } from "./ActiveLink";
+import styles from "./Navbar.module.css";
 
 const menuItems = [
     {
@@ -20,7 +22,7 @@ const menuItems = [
     },
 ];
 
-export const Navbar = () => {
+export const Navbar: FC = () => {
     return (
         <nav className={ styles['navbar-links'] }>
             { menuItems.map(({ href, text }) => (

@@ -1,10 +1,11 @@
 import { MainLayout } from "../../components/layouts/MainLayout";
+import { NextPageWithLayout } from "../_app";
 
-export default function PricingPage() {
+const PricingPage: NextPageWithLayout = () => {
     return (
         <h1 className="text-3xl font-bold">Pricing Page</h1>
     );
-}
+};
 
 PricingPage.getLayout = function getLayout(page) {
     return (
@@ -13,3 +14,5 @@ PricingPage.getLayout = function getLayout(page) {
         </MainLayout>
     );
 }
+
+export default PricingPage;
